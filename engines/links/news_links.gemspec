@@ -19,6 +19,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
 
-  s.add_dependency "news_core"
   s.add_dependency "deface"
 end

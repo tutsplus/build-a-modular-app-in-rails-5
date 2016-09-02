@@ -1,0 +1,6 @@
+<h3>Related Links</h3>
+<ul>
+  <% @entry.links.each do |link| %>
+    <li><%= link_to link.url, link.url %></li>
+  <% end %>
+</ul>

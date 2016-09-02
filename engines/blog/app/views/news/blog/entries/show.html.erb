@@ -4,6 +4,8 @@
   <%= simple_format @entry.body %>
 </p>
 
+<span data-news-hook="after-entry"></span>
+
 <%= link_to "Overview", news.entries_path, class: "btn btn-primary" %>
 <%= link_to "Edit", news.edit_entry_path(@entry), class: "btn btn-warning" %>
 <%= link_to "Delete", [news, @entry], method: :delete, class: "btn btn-danger" %>

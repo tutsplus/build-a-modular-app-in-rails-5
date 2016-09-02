@@ -1,0 +1,24 @@
+<%= link_to "New Link", news.new_link_path, class: "btn btn-success pull-right" %>
+<h1>Links</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>URL</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @links.each do |link| %>
+      <tr>
+        <td><%= link.id %></td>
+        <td><%= link_to truncate(link.url, length: 50), [news, link] %></td>
+        <td>
+          <%= link_to "Edit", news.edit_link_path(link), class: "btn btn-xs btn-warning" %>
+          <%= link_to "Delete", [news, link], method: :delete, class: "btn btn-xs btn-danger" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

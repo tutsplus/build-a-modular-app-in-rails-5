@@ -1,0 +1,8 @@
+<h1><%= @link.url %></h1>
+<p>
+  <%= link_to @link.url, @link.url %>
+</p>
+
+<%= link_to "Overview", news.links_path, class: "btn btn-primary" %>
+<%= link_to "Edit", news.edit_link_path(@link), class: "btn btn-warning" %>
+<%= link_to "Delete", [news, @link], method: :delete, class: "btn btn-danger" %>
