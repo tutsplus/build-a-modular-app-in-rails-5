@@ -49,3 +49,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'news_core', path: 'engines/core'
 gem 'news_blog', path: 'engines/blog'
+gem 'news_links', path: 'engines/links'
