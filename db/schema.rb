@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901144333) do
+ActiveRecord::Schema.define(version: 20160902091122) do
+
+  create_table "news_blog_entries", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "published_at"
+    t.text     "body"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["user_id"], name: "index_news_blog_entries_on_user_id"
+  end
 
   create_table "news_users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

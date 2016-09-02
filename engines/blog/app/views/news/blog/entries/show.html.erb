@@ -1,0 +1,9 @@
+<h1><%= @entry.title %></h1>
+<em>Published: <%= @entry.published_at.to_s(:long) %></em>
+<p>
+  <%= simple_format @entry.body %>
+</p>
+
+<%= link_to "Overview", news.entries_path, class: "btn btn-primary" %>
+<%= link_to "Edit", news.edit_entry_path(@entry), class: "btn btn-warning" %>
+<%= link_to "Delete", [news, @entry], method: :delete, class: "btn btn-danger" %>

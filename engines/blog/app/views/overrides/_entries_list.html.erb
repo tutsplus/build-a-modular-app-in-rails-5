@@ -1,0 +1,12 @@
+<div class="blog-entries row">
+  <% @entries.each do |entry| %>
+    <div class="col-sm-12">
+      <h2><%= entry.title %></h2>
+      <em><%= entry.published_at.to_s(:long) %></em>
+      <p><%= simple_format entry.body %></p>
+      <div>
+        <% if can? :edit, entry %><%= link_to "Edit", [news, entry] %><% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,26 @@
+<%= link_to "New Entry", news.new_entry_path, class: "btn btn-success pull-right" %>
+<h1>Entries</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Published At</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.id %></td>
+        <td><%= link_to truncate(entry.title, length: 50), [news, entry] %></td>
+        <td><%= entry.published_at.to_s(:long) %></td>
+        <td>
+          <%= link_to "Edit", news.edit_entry_path(entry), class: "btn btn-xs btn-warning" %>
+          <%= link_to "Delete", [news, entry], method: :delete, class: "btn btn-xs btn-danger" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
