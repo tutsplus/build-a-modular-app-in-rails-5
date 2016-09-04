@@ -6,7 +6,7 @@ module News
       authorize_resource class: News::Links::Link
 
       def index
-        @links = current_user.admin? ? News::Links::Link.all : current_user.links
+        @links = News::Links::Link.all
       end
 
       def show
@@ -49,7 +49,7 @@ module News
       end
 
       def link_params
-        params.require(:link).permit(:url, :entry_id)
+        params.require(:link).permit(:url)
       end
 
     end

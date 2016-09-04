@@ -7,11 +7,6 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :entry_id, class: "control-label" %>
-    <%= f.select :entry_id, current_user.entries.collect { |e| [e.title, e.id] }, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
     <div>
       <%= f.submit "Create Link", class: "btn btn-success" %>
       <%= link_to "Cancel", news.links_path, class: "btn btn-default" %>

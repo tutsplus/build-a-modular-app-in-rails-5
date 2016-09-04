@@ -1,0 +1,4 @@
+<div class="form-group">
+  <%= f.label :entry_id, class: "control-label" %>
+  <%= f.select :entry_id, current_user.entries.collect { |e| [e.title, e.id] }, class: "form-control" %>
+</div>
