@@ -1,24 +1,19 @@
-# README
+# [Build a Modular App In Rails 5][published url]
+## Instructor: [Markus Mühlberger][instructor url]
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Modularity is a popular strategy for building complex applications. The modular app architectural pattern has a high focus on reusability and has first-class support in the Ruby on Rails framework.
 
-Things you may want to cover:
+In this course, Envato Tuts+ instructor Markus Mühlberger will show you how to get started with modular app development in Ruby on Rails. Follow along with Markus as he builds a complete app solution, integrating several independent modular engines.
 
-* Ruby version
+## Source Files Description
 
-* System dependencies
+The source files contain an example course project, that will be built throughout the course.
 
-* Configuration
+------
 
-* Database creation
+These are source files for the Envato Tuts+ course: [Build a Modular App In Rails 5][published url]
 
-* Database initialization
+Available on [Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[published url]: https://code.tutsplus.com/courses/build-a-modular-app-in-rails-5
+[instructor url]: https://tutsplus.com/authors/markus-muehlberger
